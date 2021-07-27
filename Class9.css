@@ -1,0 +1,78 @@
+@font-face {
+    font-family: Boxigen;
+    src: url(BOXIGEN.tff);
+    font-weight: bold;
+  }
+
+body {
+    margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+/*
+  AUTO GRID
+  Set the minimum item size with `--auto-grid-min-size` and you'll
+  get a fully responsive grid with no media queries.
+*/
+.auto-grid {
+    --auto-grid-min-size: 16rem;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+    grid-gap: 1rem;
+  }
+  
+  /*
+    WRAPPER
+    A utility with a max width that contains child elements and horizontal centers them
+  */
+  .wrapper {
+    max-width: 65rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  
+  /* Presentational styles */
+  
+  body {
+    background: #efefef;
+    padding: 1rem 0;
+    line-height: 1.4;
+    font-family: sans-serif;
+  }
+  
+  .grid-li {
+    padding: 5rem 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    background: #be2edd;
+    color: #ffffff;
+  }
+
+  img {
+      width: 200px;
+  }
